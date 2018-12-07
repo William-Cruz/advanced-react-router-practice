@@ -30,6 +30,13 @@ function users(state = "",action){
 }
 
 const reducers = combineReducers({
-  newComments,newTasks,newOrders,tickets,messages,tasks,orders,users
+  newComments,
+  newTasks,
+  newOrders,
+  tickets,
+  messages,
+  tasks,
+  orders,
+  users
 });
 export default reducers;

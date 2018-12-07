@@ -1,8 +1,9 @@
 import React from "react";
 import {connect} from "react-redux";
+import PropTypes from "react";
 
 function Profile(props) {
-  const userId = 0;
+  const userId = {user};
   const user = props.users.find(u => u.id == userId) || {};
   return (   
     <div>
@@ -12,9 +13,16 @@ function Profile(props) {
       <p>
         {user.address}
       </p>
+      <h3> Profile here</h3>
     </div>
   );
 }
+
+Profile.propTypes = {
+  users: PropTypes.func
+};
+
+
 export default connect(function (state) {
   return {users: state.users};
 })(Profile);

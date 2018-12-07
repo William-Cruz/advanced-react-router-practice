@@ -1,5 +1,5 @@
 import React from "react";
-// import {Link} from "react-router-dom";
+
 
 function SideNav() {
   return (
@@ -23,7 +23,8 @@ function SideNav() {
           </a>
         </li>
       </ul>
-    </div>);  
+    </div>);
 }
 
 export default SideNav;
+
