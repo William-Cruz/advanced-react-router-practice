@@ -17,7 +17,8 @@
     "react-dom": "^15.3.2",
     "react-redux": "^5.0.4",
     "react-router-dom": "^4.1.1",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "start": "nf start",
@@ -26,7 +27,10 @@
     "api": "json-server --id _id --watch --port 4000 db.json",
     "build": "react-scripts build",
     "test": "npm run lint && react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:3001",
+  "snyk": true
 }
